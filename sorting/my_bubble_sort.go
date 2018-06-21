@@ -5,7 +5,7 @@ import "fmt"
 import "github.com/0xAX/go-algorithms"
 
 func main(){
-	arr := util.RandArray(10)
+	arr := utils.RandArray(10)
 	alen = len(arr)
 
 	for i := 0; i < alen; i++ {
