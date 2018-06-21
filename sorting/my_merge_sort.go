@@ -4,24 +4,25 @@ import "fmt"
 
 import "github.com/0xAX/go-algrithms"
 
-func merge(arr1, arr2)  {
+func merge(arr1 []int, arr2 []int) []int  {
 	i := 0
 	j := 0
-	narr := []
+	n := 0
 	nlen = len(arr1) + len(arr2)
+	var narr []int 
 	for ; j + i < nlen;  {
 		if arr1[i] > arr2[j] {
-			narr.append(arr2[j])
+			narr[n++] = arr2[j]
 			j++
 		}else{
-			narr.append(arr1[i])
+			narr[n++] = arr1[i]
 			i++
 		}
 	}
 	return narr
 }
 
-func MergeSort(arr){
+func MergeSort(arr []int) []int {
 	if len(arr) == 1{
 		return arr
 	}else{
@@ -36,5 +37,5 @@ func MergeSort(arr){
 func main(){
 	arr := utils.RandArray(10)
 	narr := MergeSort(arr)
-	fmt.Printf(narr)
+	fmt.Println(narr)
 }
