@@ -32,3 +32,9 @@ func MergeSort(arr){
 		return merge(left, right)
 	}
 }
+
+func main(){
+	arr := utils.RandArray(10)
+	narr := MergeSort(arr)
+	fmt.Printf(narr)
+}
