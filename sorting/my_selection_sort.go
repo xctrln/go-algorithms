@@ -7,7 +7,7 @@ func main()  {
 	arr := utils.RandArray(10)
 	alen := len(arr)
 	for i := 0; i < alen; i++{
-		for j := i; i < alen; j++{
+		for j := i; j < alen; j++{
 			if arr[i] < arr[j]{
 				arr[i], arr[j] = arr[j], arr[i]
 			}	
