@@ -6,7 +6,7 @@ import "github.com/0xAX/go-algorithms"
 
 func main(){
 	arr := utils.RandArray(10)
-	alen = len(arr)
+	alen := len(arr)
 
 	for i := 0; i < alen; i++ {
 		for j := 0; j < alen - 1 - i; j++ {
