@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-import "github.com/0xAX/go-algrithms"
+import "github.com/0xAX/go-algorithms"
 
 func merge(arr1, arr2)  {
 	i := 0
 	j := 0
-	narr := []
-	nlen = len(arr1) + len(arr2)
+	nlen := len(arr1) + len(arr2)
+	var narr [nlen]int
 	for ; j + i < nlen;  {
 		if arr1[i] > arr2[j] {
 			narr.append(arr2[j])
