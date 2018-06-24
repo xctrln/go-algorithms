@@ -8,16 +8,17 @@ func merge(arr1 []int, arr2 []int) []int  {
 	i := 0
 	j := 0
 	n := 0
-	nlen = len(arr1) + len(arr2)
+	nlen := len(arr1) + len(arr2)
 	var narr []int
 	for ; j + i < nlen;  {
 		if arr1[i] > arr2[j] {
-			narr[n++] = arr2[j]
+			narr[n] = arr2[j]
 			j++
 		}else{
-			narr[n++] = arr1[i]
+			narr[n] = arr1[i]
 			i++
 		}
+		n++
 	}
 	return narr
 }
